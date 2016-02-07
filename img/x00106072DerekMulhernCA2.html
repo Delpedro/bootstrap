@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>x00106072_IMD_CA2</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    removeSection = function(e) {
+    	$(e).parents(".section").remove();
+        $('[data-spy="scroll"]').each(function(){
+            var $spy = $(this).scrollspy("refresh");
+        });
+    }
+    $(".scroll-area").scrollspy({target: "#myNavbar"});
+    $("#myNavbar").on("activate.bs.scrollspy", function () {
+        var currentItem = $(".nav li.active > a").text();
+        $("#info").empty().html("Currently you are viewing - " + currentItem);
+    })
+});
+
+</script>
+<style type="text/css">
+.scroll-area {
+	height: 700px;
+	position: relative;
+	overflow: auto;
+}
+</style>
+
+</head>
+
+<body>
+<div class="container">
+    <h2 class="text-center">Derek Mulhern (X00106072)</h2>
+    <nav id="myNavbar" class="navbar navbar-default" role="navigation"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse"> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#section-1">CA2 Information</a></li>
+                <li><a href="#section-2">Original Template Features</a></li>
+                <li><a href="#section-3">Additional Features added to Template</a></li>
+                <li><a href="#section-4">Testing Issues</a></li>
+                <li><a href="#section-5">Azure Hosting</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="scroll-area" data-spy="scroll" data-offset="0">
+    	<div class="section">
+            <h3 id="section-1">Information</h3>
+			<p>I am an IT Management Student</p>
+            <p>For my second CA, I was required to build an Interactive Portfolio Website using Twitter Bootstrap. Having never used Bootstrap before it was a challenge, but a very enjoyable exercise. The template the writer choose to use was Musim Bocor (<a target="_blank" href="http://bootstraptaste.com/bocor-bootstrap-template-nice-animation/">Original Template</a>)</p>
+            <p></p>
+            <ul>
+                <li>Law of Pragnanz - I certainly did  keep my website very simple. I saw so many students very abstract background wallpapers, where i decided to choose a simple green tinted timber floor.</li>
+                <li>Law of Continuity - The arrangment of my website is completely facilitated to the user, easy to read and straight to the point. Everything that is required within a portfolio is included within the website</li>
+                <li>Law of Similarity - The sections follow a sequence, white then a light grey to allow the user acknowledge a new section of the website. A title for each section with animation included such as fade in or boucing titles</li>
+                <li>Law of Focal Point - I incorporated this law by using different, stand out colors for the buttons, tooltips and the project icons</li>
+                <li>Law of Proximity - Having three columns in education and projects allows the user acknowledge one with the other. The modals were kept simple and incorporated simple requirements</li>
+                <li>Law of Isomorphic Correspondence - Sticking with popular conventions of simple websites such as a navigation bar at the top, enabling smooth scrolling and a method a fast method to give a user the ability to return to the top of the screen were all taken into consideration</li>
+                <li>Law of Figure/Ground - The colors chosen for this website really fall under this law. Everything on the page is very well spaced and very legible on all types of devices such as i-Phone, HTC One, i-Pad, 13" Laptop and finally on 27" montitors</li>
+                <li>Law of Common Fate - This law was not really necessary regarding my simple portfolio website.</li>
+                
+            </ul>
+        </div>
+        <hr>
+        <div class="section">
+            <h3 id="section-2">Original Template Features (Did not scale on mobile devices)</h3>
+            <ul>
+                <li>Hero Component</li>
+                <li>Contact Me component(Not a modal)</li>
+                <li>Scrollspy</li>
+                <li>Standard Glyphicons</li>
+                <li>Standard Navigation bar (This did not scale well on mobile devices)</li>
+                <li>Footer</li>                
+            </ul>
+        </div>
+        <hr>
+        <div class="section">
+            <h3 id="section-3">Additional Features</h3>
+            <ul>
+                <li>Modal contact form</li>
+                <li>Social Media Connections</li>
+                <li>Import Images</li>
+                <li>Collapsible Images incorporating Javascript to allow a user interact with my college projects to find out more about the individual projects using progressive disclosure. I spent a great deal on this element of the website, this was challenging but very reqarding.</li>
+                <li>Subtle Search button - I will remove this feature as it was only for the purpose of this CA, in order to allow me discuss different aspects of the Interactive Media Design CA2</li>
+                <li>Scalable Website - The original template was not designed for smaller devices and did not scale well. This section of the CA was difficult but very neccessary in order to add to the user experience</li>
+                <li>Dropdown menu - Incorporating progressive disclousure, a user can click the projects tab to see all other projects</li>
+				<li>Color - I implemented color to highlight certain information such as my GPA in the education section of the website</li>
+                <li>Recommendations Section - This is my favourite section of the portfolio. This really makes the website stand out and gives a greater depth into my portfolio. The person who gave the recommendation names is a link to their LinkedIn page</li>
+                <li>The ability for a user to view or download my CV. I was very keen to make sure all new pages opens in a new tab</li>
+                <li>"Back to the Top" feature</li>
+                <li>More improved gylphicons</li>
+                <li>Improved Navigation Bar</li>
+                <li>Bootstrap tooltips</li>
+				<li>Bootstrap List-groups</li>
+				<li>Disabled Buttons</li>
+                <li>Carousel Modal - This was very tricky and a feature I spent a good deal of time at. I really wanted to incorporate some screen shots of at least one of my previous college projects</li>
+				<li>Google Maps</li>
+				<li>Bootstrap Text/Typograph</li>
+            </ul>
+        </div>
+        <hr>
+            <div class="section">
+			<div>
+            <h3 id="section-4">Test Cases - Unfixed Bugs / Fixed Bugs</h3>
+            
+			<dt>Unfixed Bugs</dt>
+                <dd>1) When a user is viewing the website on a mobile device, they can slightly drag the screen to the left and right</dd>
+				<dd>2) Interacting with the website using Miscrosoft Edge browser, animinations do not work as intended. For example the Education banners are suppose to rotate (from left to right) onto the screen as they do in Chrome, however in this browser, they slide in from the right.</dd>
+<br>
+			<dt>Fixed Bugs</dt>
+				<dd>1) The drop-down menu would not work properly on mobile devices. I had to add CSS properties after debugging the website for many hours
+				<dd>2) To make sure all components were aligned on all devices, I had to add buttons to the project section, i tried to use the "hidden" property, however this would not work. My solution, use disabled buttons</dd>
+				<dd>3) The scholar gylphicon would not work. After some investigations I discovered that the index page required a more up to date link to a bootstrap page. The one from the template was out of date</dd>
+				<dd>4) Google maps would not work initially. If you use CSS on a separate file it will not work, however if you incorporate inline styling, it eventually worked.</dd>
+				<dd>5) Sometimes the nav bar drop-down menu, covered the about me section. It was because the z-index was set wrong on the original template as that did not have this option incorporated. After a few days of debuggins and some conversations with many students I discovered this solution and fixed the problem</dd>
+				<dd>6)</dd>
+				<dd>7)</dd>
+				<dd>8)</dd>
+				<dd>9)</dd>
+				<dd>10)</dd>
+				<dd>11)</dd>
+				<dd>12)</dd>
+				
+			   
+</div>			
+        </div>
+        <hr>
+          <div class="section">
+            <h3 id="section-5">Azure Hosting</h3>
+            <ul>
+                <li>Getting the website up and running took a bit of investigating. I could not sync my Visual Studio with Azure. I made the decision to link my dropbox account with Azure for the deployment of the code</li>
+                <li>The link to my website on Azure is > (<a target="_blank"href="http://derekmulhern.azurewebsites.net/">Derek Mulhern: My Portfolio</a>)</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+</div>
+</body>
+</html>                                		

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Derek Mulhern Portfolio</title>
+
+
+
+	<!-- css -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/animations.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet">
+	<link href="color/default.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="http://getbootstrap.com/javascript/#carousel">
+    
+
+
+
+
+
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+	<section class="hero" id="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-right navicon">
+					<a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center inner">
+					<div class="animatedParent">
+						<h1 class="animated fadeInDown">Derek Mulhern</h1>
+
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<div class="animatedParent">
+						<img src="img/profiler.jpg" class="img-thumbnail" alt="Profiler" width="200" height="190">
+						<p></p>
+						<p class="animated fadeInUp">Dream Job: DevOps</p>
+						<p></p>
+
+						<ul class="list-inline intro-social-buttons">
+							<li class="twitter"><a target="_blank" href="https://twitter.com/?lang=en" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> 
+							<span class="network-name">Twitter</span></a>
+								<p></p>
+								<li class="linkedin"><a target="_blank" href="http://lnkd.in/UCkpPr" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> 
+								<span class="network-name">Linkedin</span></a>
+								</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Navigation -->
+	<div id="navigation">
+		<nav class="navbar navbar-custom" style="z-index: 100;" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="site-logo">
+							<a href="index.html#intro" class="brand">D. Mulhern</a>
+						</div>
+					</div>
+					<div class="col-md-10">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+								<i class="fa fa-bars"></i>
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="menu">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="active"><a href="#intro">Home</a></li>
+								<li><a href="#about">About Me</a></li>
+								<li><a href="#education">Education (GPA)</a></li>
+								<!-- Dropdown Menu -->
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown">Projects <span class="caret"</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#projects">TitanFall</a></li>
+										<li><a href="#projects">SAP Dashboard</a></li>
+										<li><a href="#projects">Docker</a></li>
+									</ul>
+								</li>
+								<li><a href="#recommendation">Recommendations</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#basicModal">Contact</a></li>
+								<li class="cv"><a target="_blank" href="img/Derek_Mulhern_CV.pdf" href="#CV" data-toogle="tooltip" data-placement="bottom" title="Click to Download">Curriculum Vitae</a></li>
+								<li class="nextpage"><a target="_blank" href="img/x00106072DerekMulhernCA2.html" href="#NXT" data-toogle="tooltip" data-placement="bottom"
+									title="CLICK ME BEN!!"><span class="glyphicon glyphicon-search"></span></a></li>
+							</ul>
+						</div>
+						<!-- /.Navbar-collapse -->
+
+					</div>
+				</div>
+			</div>
+			<!-- /.container -->
+		</nav>
+		<!-- Modal -->
+		<!--Contact modal-->
+		<div class="modal fade" id="basicModal" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" id="closecontactModalButton" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title text-center">Drop me a message</h4>
+					</div>
+					<div class="modal-body" id="contactModalBody">
+
+						<form id="contactform" role="form">
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input type="text" id="name" placeholder="Your Name" class="form-control" name="Name" />
+							</div>
+							<div class="form-group">
+								<label for="emailid">Email</label>
+								<input type="text" id="emailid" placeholder="Email" class="form-control" name="Email" />
+							</div>
+							<div class="form-group">
+								<label for="subject">Subject</label>
+								<input type="text" id="subject" placeholder="Subject" class="form-control" name="Subject" />
+							</div>
+							<div class="form-group">
+								<label for="message">Message</label>
+								<textarea id="message" rows="4" placeholder="Message" class="form-control" name="Message"></textarea>
+							</div>
+							<button type="submit" class="btn btn-skin btn-lg btn-block" id="btnContactUs">
+								Send Message</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Section: about -->
+	<section id="about" class="home-section color-dark bg-white">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="animatedParent">
+						<div class="section-heading text-center animated bounceInDown" style="z-index: -1;">
+							<h2 class="h-bold">About Me</h2>
+							<div class="divider-header"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="container">
+
+
+			<div class="row">
+
+
+				<div class="col-lg-8 col-lg-offset-2 animatedParent">
+					<div class="text-center">
+						<p>
+							I am a highly motivated, hard working and mature college student with a passion in the field of Computing. I will shortly
+							graduate from Institute of Technology Tallaght with a Degree in IT Management(Honours).
+						</p>
+						<p>
+							During my time studying, and from my diverse background in sales and management, I have gained excellent experience in team
+							work, project management, leadership, communications and customer service.
+						</p>
+						<p>
+							I am seeking employment in a job that offers challenges and opportunities, will allow me to grow professionally and where
+							my strong work ethic, education and skills in computing will provide me with the opportunity for advancement.
+						</p>
+						<p>
+							I am a reliable and dedicated professional with an excellent work ethic and positive attitude who loves to work in teams
+							however I am very capable working alone and will use my initiative.
+						</p>
+						<a href="#education" class="btn btn-skin btn-scroll">My GPA</a>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+	</section>
+
+	<!-- /Section: about -->
+
+
+	<!-- Section: services -->
+	<section id="education" class="home-section color-dark bg-gray">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div>
+						<div class="section-heading text-center">
+							<h2 class="h-bold">Education (GPA)</h2>
+							<div class="divider-header"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="text-center">
+			<div class="container">
+
+				<div class="row animatedParent">
+					<div class="col-md-4">
+						<div class="animated rotateInDownLeft">
+							<div class="service-box">
+								<div class="service-icon">
+									<span class="fa fa-graduation-cap fa-3x"></span>
+								</div>
+								<div class="service-desc">
+									<h5>Tallaght IT (Year 1) - <em>4.0</em></h5>
+									<div class="divider-header"></div>
+									<ul class="list-group">
+										<li class="list-group-item disabled"><em><strong>FEATURED MODULES</strong></em></li>
+										<li class="list-group-item">Software Development</li>
+										<li class="list-group-item">Discrete Mathematics</li>
+										<li class="list-group-item">Computer Architecture</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="animated rotateInDownLeft slow">
+							<div class="service-box">
+								<div class="service-icon">
+									<span class="fa fa-graduation-cap fa-3x"></span>
+								</div>
+								<div class="service-desc">
+									<h5>Tallaght IT (Year 2) - <em>3.8</em></h5>
+									<div class="divider-header"></div>
+									<ul class="list-group">
+										<li class="list-group-item disabled"><em><strong>FEATURED MODULES</strong></em></li>
+										<li class="list-group-item">Networking 2</li>
+										<li class="list-group-item">Software Quality Assuarance Testing</li>
+										<li class="list-group-item">Database Design & Programming</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="animated rotateInDownLeft slower">
+							<div class="service-box">
+								<div class="service-icon">
+									<span class="fa fa-graduation-cap fa-3x"></span>
+								</div>
+								<div class="service-desc">
+									<h5>Tallaght IT (Year 3) - <em>3.9</em></h5>
+									<div class="divider-header"></div>
+									<ul class="list-group">
+										<li class="list-group-item disabled"><em><strong>FEATURED MODULES</strong></em></li>
+										<li class="list-group-item">Web Design and Development</li>
+										<li class="list-group-item">Cloud Services & Distributing Computing</li>
+										<li class="list-group-item">Advanced Databases</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Section: projects -->
+	<section id="projects" class="home-section color-dark text-center bg-white">
+		<div class="container69 text-center">
+			<div class="container marginbot-50">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="animatedParent">
+							<div class="section-heading text-center">
+								<h2 class="h-bold animated bounceInDown">Projects</h2>
+								<div class="divider-header"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+            
+            
+			<div class="row">
+				<div class="col-sm-4">
+					<p class="text-center"><strong>TitanFall Hotel Reservation</strong></p>
+                    <button type="button" class="btn btn-skin disabled">Screenshots</button>
+                    <div></div>
+					<br>
+					<a href="#demo" data-toggle="collapse">
+						<img src="img/projects/titanfall.jpg" class="img-circle person" data-toogle="tooltip" data-placement="bottom" title="Click for more Information!"
+						alt="Random Name" width="255" height="255">
+					</a>
+					<div id="demo" class="collapse">
+						<p>Plan, analyse, design and implement a Java swing system.</p>
+						<p>For the project, my group used Eclipse as our IDE was implemented and Java swing and Oracle Database as the back end</p>
+						<p>Features included advanced searches for creating a booking with the system, an on-line user manual and a custom design
+							layout for the application.</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<p><strong>SAP ESA Center Dashboard</strong></p>
+<button class="btn btn-skin" data-toggle="modal" data-target=".bs-example-modal-md">Screenshots</button>
+                    <div class="container-text-center">
+                    <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content" style="margin-top: 25vh">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+    </ol>
+  
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+     <img class="img-responsive" src="img/projects/SAP/ESA_Dashboard_01.png" alt="...">
+
+    </div>
+   
+     <div class="item">
+      <img class="img-responsive" src="img/projects/SAP/ESA_Dashboard_02.png" alt="...">
+
+    </div>
+           <div class="item">
+      <img class="img-responsive" src="img/projects/SAP/ESA_Dashboard_03.png" alt="...">
+    </div>
+           <div class="item">
+      <img class="img-responsive" src="img/projects/SAP/ESA_Dashboard_04.png" alt="...">
+
+    </div>
+           
+           <div class="item">
+      <img class="img-responsive" src="img/projects/SAP/ESA_Dashboard_06.png" alt="...">
+
+    </div>
+           <div class="item">
+      <img class="img-responsive" src="img/projects/SAP/ESA_Dashboard_07.png" alt="...">
+ 
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+                    
+                    
+					<br>
+					<a href="#demo2" data-toggle="collapse">
+						<img src="img/projects/sap.png" class="img-circle person" data-toogle="tooltip" data-placement="bottom" title="Click for more Information!"
+						alt="Random Name" width="255" height="255">
+					</a>
+					<div id="demo2" class="collapse">
+						<p>My 3rd year project was to design, build and deployed a dashboard application for a senior manager in SAP</p>
+						<p>The dashboard application was an aid to assist the manager in gathering critical information on Enterprise Support
+							Advisor's and their Engagement Objects</p>
+						<p>The project combined a number of different technologies working simultaneously with a front end system in Java using
+							Netbeans and a back end system using Oracle Database.</p>
+
+					</div>
+				</div>
+
+
+                
+				<div class="col-sm-4">
+					<p class="text-center"><strong>Docker - Container Virtualisation </strong></p>
+                    <button type="button" class="btn btn-skin disabled">Screenshots</button>
+					<div></div>
+					<br>
+					<a href="#demo3" data-toggle="collapse">
+						<img src="img/projects/docker.png " class="img-circle person" data-toogle="tooltip" data-placement="bottom" title="Click for more Information!"
+						alt="Random Name" width="255" height="255">
+					</a>
+					<div id="demo3" class="collapse">
+						<p>My 4th year project is everything to do with Docker.</p>
+						<p>This is a container based virtualisation technology that enables a piece of software to be wrapped up. In other words,
+							it sandboxes the application dependences to avoid dependency hell</p>
+						<p>Using certain use case criterias I compared different aspects such as speed, resource management between containers
+							against virtual machines</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<!-- ==== Recommendation ==== -->
+	<section id="recommendation" class="home-section color-dark bg-gray">
+		<div class="container" id="blog" name="blog">
+			<br>
+			<div class="row">
+
+				<div class="animatedParent" style="margin-bottom: 5%;">
+					<div class="section-heading text-center">
+						<h2 class="h-bold animated bounceInDown">Recommendations</h2>
+						<div class="divider-header"> </div>
+					</div>
+				</div>
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6 blog-bg">
+					<div class="col-lg-4 centered">
+						<br>
+						<p><img class="img img-circle" src="img/bkelly.jpg" width="60px" height="60px"></p>
+						<a target="_blank" href="https://www.linkedin.com/profile/view?id=ADEAAAeBUScBAIryEpeJ4QU3iVrqbu_vVtMVYfE&authType=NAME_SEARCH&authToken=dHnW&locale=en_US&srchid=2296375811447799182642&srchindex=1&srchtotal=811&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A2296375811447799182642%2CVSRPtargetId%3A125915431%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Atrue%2CauthType%3ANAME_SEARCH"><h4>Billy Kelly</h4></a>
+						<h5>Published Feb 23</h5>
+					</div>
+					<div class="col-lg-8 blog-content">
+						<h2>Huge Loss</h2>
+						<p>I worked with Derek for 4 years and found him very professional in his approach when dealing with colleagues and customers.
+							Derek is an excellent team player and has impeccable attention to detail. Derek has a natural drive and is a superb
+							communicator and I look forward to doing business with him in the future.</p>
+					</div>
+				</div>
+				<!-- /col -->
+
+				<div class="col-lg-6 blog-bg">
+					<div class="col-lg-4 centered">
+						<br>
+						<p><img class="img img-circle" src="img/jdoyle.jpg" width="60px" height="60px"></p>
+						<a target="_blank" href="https://www.linkedin.com/profile/view?id=AAYAAA2vFTIBIyDx2KXcI7dgF05pVatODdY5R0o&authType=name&authToken=Uspu&trk=mirror-profile-memberlist-photo"><h4>John Doyle</h4></a>
+						<h5>Published Feb 20</h5>
+					</div>
+					<div class="col-lg-8 blog-content">
+						<h2>Hire Him!</h2>
+						<p>During my time as a student at IT Tallaght Derek has displayed excellent Leadership and Communication skills, as Class
+							Representative, interfacing between the Students, Lecturers, and Faculty. Derek has displayed these qualities consistently,
+							while simultaneously concentrating on studies to a high degree of proficiency.</p>
+					</div>
+				</div>
+				<!-- /col -->
+			</div>
+			<!-- /row -->
+			<br>
+			<br>
+		</div>
+		<!-- /container -->
+
+		<!-- Section: contact -->
+		<section id="contact" class="home-section nopadd-bot color-dark text-center bg-white">
+			<div class="container marginbot-50">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="animatedParent">
+							<div class="section-heading text-center">
+								<h2 class="h-bold animated bounceInDown">Drop me a message</h2>
+								<div class="divider-header"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="container">
+
+				<div class="row marginbot-80">
+					<div class="col-md-8 col-md-offset-2">
+						<form id="contact-form">
+							<div class="row marginbot-20">
+								<div class="col-md-6 xs-marginbot-20">
+									<input type="text" class="form-control input-lg" id="name" placeholder="Enter name" required="required" />
+								</div>
+								<div class="col-md-6">
+									<input type="email" class="form-control input-lg" id="email" placeholder="Enter email" required="required" />
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="text" class="form-control input-lg" id="subject" placeholder="Subject" required="required" />
+									</div>
+									<div class="form-group">
+										<textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required" placeholder="Message"></textarea>
+									</div>
+									<button type="submit" class="btn btn-skin btn-lg btn-block" id="btnContactUs">
+										Send Message</button>
+								</div>
+							</div>
+
+							<ul class="social-links">
+								<li class="twitter"><a target="_blank" href="https://twitter.com/?lang=en"><i class="fa fa-twitter fa-1x"></i></a></li>
+								<li class="linkedin"><a target="_blank" href="http://lnkd.in/UCkpPr"><i class="fa fa-linkedin fa-1x"></i></a></li>
+							</ul>
+
+						</form>
+
+					</div>
+				</div>
+
+
+			</div>
+
+		</section>
+        <style>
+            #googleMap {
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%)
+            }
+        </style>
+        <!-- /Google Map -->
+        <div id="googleMap" style="height: 400px; width: 100%; margin-top: 80px;" class="home-section color-dark bg-gray"</div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(53.2904607, -6.3633957);
+
+function initialize() {
+var mapProp = {
+center:myCenter,
+zoom:12,
+scrollwheel:false,
+draggable:false,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+    </section>
+        
+
+
+		<!-- /Section: contact -->
+
+
+
+		<footer>
+
+		
+
+		<a class="text-center" class="up-arrow" href="index.html#intro"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+			<p><i>&copy;Copyright 2015 - Designed by Derek Mulhern</i></p>
+	
+
+		</footer>
+
+
+
+		<!-- Core JavaScript Files -->
+		<script src="js/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="js/jquery.sticky.js"></script>
+		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/jquery.scrollTo.js"></script>
+		<script src="js/jquery.appear.js"></script>
+		<script src="js/stellar.js"></script>
+		<script src="js/nivo-lightbox.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/css3-animate-it.js"></script>
+        
+
+    
+
+
+
+    
+
+
+
+</body>
+
+
+    <script>
+	$(document).ready(function(){
+		 $('[data-toggle="tooltip"]').tooltip(); 
+
+		  
+		  // Add smooth scrolling to all links in navbar + footer link
+		  $(".navbar a, footer a, up-arrow a[href='#pageTop']").on('click', function(event) {
+
+
+
+			// Store hash
+			var hash = this.hash;
+
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+			  scrollTop: $(hash).offset().top
+			}, 1100, function(){
+		   
+			  // Add hash (#) to URL when done scrolling (default click behavior)
+			  window.location.hash = hash;
+			});
+		  });
+		})
+  
+    </script>
+    <script>
+        
+    $('#myCarousel').carousel({
+  interval: 500;
+});
+    </script>
+    
+    
+</html>
